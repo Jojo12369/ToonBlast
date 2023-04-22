@@ -1,0 +1,47 @@
+Unity Package Manager Diagnostics (v0.1.8)
+============
+Ran 7 checks
+============
+5 succeeded
+1 failed
+1 did not run
+============
+✅ UPM registry reachable (PASS)
+Make an HTTP request to the UPM package registry
+>> HTTP/1.1 200 OK
+>> X-Powered-By: Express
+>> Provider: Genesis
+>> Date: Sat, 22 Apr 2023 09:45:09 GMT
+>> Connection: close
+
+✅ Ping UPM registry (PASS)
+Measure the latency of the UPM package registry API
+>> 6 pings made in 5.256 seconds
+>> Average latency: 125.45 ms
+>> Minimum latency: 111.13 ms
+>> Maximum latency: 164.52 ms
+>> Standard deviation: 20.16
+
+✅ Ping UPM download (PASS)
+Measure the latency of the UPM package download endpoint
+>> 5 pings made in 5.187 seconds
+>> Average latency: 17.77 ms
+>> Minimum latency: 8.86 ms
+>> Maximum latency: 42.68 ms
+>> Standard deviation: 14.04
+
+✅ UPM registry download speed (PASS)
+Test the Internet connection using the UPM package registry
+>> Measured speed to the UPM registry: 79.65 Megabits per second
+
+❌ Speedtest.net (FAIL)
+Test the Internet connection using Speedtest.net
+>> Cannot connect to 'www.speedtest.net:443'. This could be because there is no Internet access or the host is inaccessible due to firewall or proxy settings.
+
+✅ HTTP proxy environment variables (PASS)
+Detect whether proxy-related environment variables are set (HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, NO_PROXY, UNITY_PROXYSERVER, UNITY_NOPROXY)
+>> No proxy support has been configured through environment variables.
+
+❓ UPM health check (UNKNOWN)
+Start the UPM process and call its health endpoint
+>> Could not find UPM executable at path '/Applications/Unity/Hub/Editor/2020.3.47f1/Unity.app/Contents/Resources/PackageManager/Server/UnityPackageManager'
